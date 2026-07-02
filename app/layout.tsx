@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Eshana Sangeeth | Power Platform Developer & Frontend Developer",
+  title: "Portfolio | Eshana Sangeeth",
   description:
     "Personal portfolio of Eshana Sangeeth – Power Platform Developer & Frontend Developer specialising in Microsoft Power Platform, React, and Next.js.",
 };
