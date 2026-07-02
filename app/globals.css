@@ -1,26 +1,126 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+*, *::before, *::after { box-sizing: border-box; }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html { scroll-behavior: smooth; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #080808;
+  color: #f1f5f9;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #080808; }
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #F59E0B, #8B5CF6);
+  border-radius: 10px;
+}
+::selection { background: rgba(245,158,11,.3); color: #fff; }
+
+/* ── Keyframes ── */
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50%      { transform: translateY(-12px); }
+}
+@keyframes glow-pulse {
+  0%,100% { opacity:.3; transform:scale(1); }
+  50%     { opacity:.7; transform:scale(1.05); }
+}
+@keyframes spin-slow {
+  from { transform:rotate(0deg); }
+  to   { transform:rotate(360deg); }
+}
+@keyframes gradient-shift {
+  0%   { background-position:0% 50%; }
+  50%  { background-position:100% 50%; }
+  100% { background-position:0% 50%; }
+}
+@keyframes shimmer {
+  0%   { transform:translateX(-100%) skewX(-12deg); }
+  100% { transform:translateX(200%) skewX(-12deg); }
+}
+@keyframes slide-up {
+  from { opacity:0; transform:translateY(30px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+@keyframes progress {
+  from { width:0; }
+}
+
+/* ── Animation utilities ── */
+.animate-float         { animation: float 4s ease-in-out infinite; }
+.animate-float-1       { animation: float 3.5s ease-in-out infinite .3s; }
+.animate-float-2       { animation: float 4.2s ease-in-out infinite .8s; }
+.animate-float-3       { animation: float 3.8s ease-in-out infinite 1.3s; }
+.animate-float-4       { animation: float 4.5s ease-in-out infinite 1.8s; }
+.animate-glow-pulse    { animation: glow-pulse 3s ease-in-out infinite; }
+.animate-spin-slow     { animation: spin-slow 20s linear infinite; }
+.animate-gradient      { background-size:300% 300%; animation:gradient-shift 6s ease infinite; }
+.animate-shimmer::after {
+  content:''; position:absolute; inset:0;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.06),transparent);
+  animation:shimmer 2.5s infinite;
+  overflow:hidden;
+}
+
+/* ── Glassmorphism ── */
+.glass {
+  background: rgba(255,255,255,.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,.08);
+}
+.glass-strong {
+  background: rgba(255,255,255,.06);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255,255,255,.12);
+}
+
+/* ── Gradient text ── */
+.gradient-text {
+  background: linear-gradient(135deg, #F59E0B 0%, #EF4444 50%, #8B5CF6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.gradient-text-gold {
+  background: linear-gradient(135deg, #FBBF24 0%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.gradient-text-purple {
+  background: linear-gradient(135deg, #A78BFA 0%, #8B5CF6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Grid pattern background ── */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+    linear-gradient(to right, rgba(255,255,255,.03) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+/* ── Glow shadows ── */
+.glow-gold   { box-shadow: 0 0 40px rgba(245,158,11,.25); }
+.glow-purple { box-shadow: 0 0 40px rgba(139, 92,246,.25); }
+.glow-blue   { box-shadow: 0 0 40px rgba( 59,130,246,.25); }
+
+/* ── Section heading underline ── */
+.section-heading::after {
+  content:'';
+  display:block;
+  width:60px; height:3px;
+  border-radius:999px;
+  background:linear-gradient(90deg,#F59E0B,#8B5CF6);
+  margin-top:12px;
 }
