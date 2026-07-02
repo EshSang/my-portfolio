@@ -41,7 +41,7 @@ export default function Navbar() {
             ES
           </div>
           <span className="font-bold text-white hidden sm:block">
-            Eshana Sangeeth<span className="text-[#F59E0B]">.</span>
+            Eshana Sangeeth
           </span>
         </motion.a>
 
