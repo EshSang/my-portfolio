@@ -5,7 +5,7 @@ import { GithubIcon, LinkedinIcon } from "./icons";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
+    <section id="home" suppressHydrationWarning className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-[#0a0b1e]">
         <div className="absolute inset-0 bg-grid opacity-50" />
