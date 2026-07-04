@@ -3,15 +3,29 @@ import { motion } from "framer-motion";
 import { MapPin, Zap } from "lucide-react";
 
 const timeline = [
+
   {
-    company: "OREL IT",
-    role: "Associate Image Processor",
-    period: "2019 – 2021",
+    company: "SRIQ Corporation",
+    role: "Associate Low Code Engineer",
+    period: "2025 – Present",
     color: "#F59E0B",
     achievements: [
-      "Processed and quality-checked large volumes of product images for e-commerce platforms",
-      "Collaborated with design teams to ensure brand consistency across digital assets",
-      "Improved workflow efficiency by implementing batch-processing techniques",
+      "Architecting enterprise-grade low-code solutions using Microsoft Power Platform",
+      "Building custom connectors and PCF controls to extend platform capabilities",
+      "Collaborating with cross-functional teams on digital transformation initiatives",
+      "Developing full-stack features with React and Next.js for internal tooling",
+    ],
+  },
+  {
+    company: "OREL IT",
+    role: "Associate Application Developer",
+    period: "2023 – 2025",
+    color:  "#3B82F6",
+    achievements: [
+      "Led development of end-to-end Power Platform solutions for 10+ business departments",
+      "Integrated Dataverse models with SharePoint and external APIs for seamless data flow",
+      "Delivered the Supplier Portal and Vehicle Parking Management systems from scratch",
+      "Mentored junior developers on Power Platform best practices",
     ],
   },
   {
@@ -27,28 +41,17 @@ const timeline = [
   },
   {
     company: "OREL IT",
-    role: "Associate Application Developer",
-    period: "2023 – 2025",
-    color: "#3B82F6",
+    role: "Associate Image Processor",
+    period: "2019 – 2021",
+    color:  "#22C55E",
     achievements: [
-      "Led development of end-to-end Power Platform solutions for 10+ business departments",
-      "Integrated Dataverse models with SharePoint and external APIs for seamless data flow",
-      "Delivered the Supplier Portal and Vehicle Parking Management systems from scratch",
-      "Mentored junior developers on Power Platform best practices",
+      "Processed and quality-checked large volumes of product images for e-commerce platforms",
+      "Collaborated with design teams to ensure brand consistency across digital assets",
+      "Improved workflow efficiency by implementing batch-processing techniques",
     ],
   },
-  {
-    company: "SRIQ Corporation",
-    role: "Associate Low Code Engineer",
-    period: "2025 – Present",
-    color: "#22C55E",
-    achievements: [
-      "Architecting enterprise-grade low-code solutions using Microsoft Power Platform",
-      "Building custom connectors and PCF controls to extend platform capabilities",
-      "Collaborating with cross-functional teams on digital transformation initiatives",
-      "Developing full-stack features with React and Next.js for internal tooling",
-    ],
-  },
+  
+  
 ];
 
 export default function Experience() {

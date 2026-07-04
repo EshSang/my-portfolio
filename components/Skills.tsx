@@ -13,7 +13,8 @@ const categories: { title: string; color: string; icon: string; skills: Skill[] 
     skills: [
       { name: "HTML / CSS" },
       { name: "JavaScript" },
-      { name: "React" },
+      { name: "TypeScript" },
+      { name: "React.js" },
       { name: "Next.js" },
       { name: "Tailwind CSS" },
       { name: "Bootstrap" },
@@ -35,8 +36,17 @@ const categories: { title: string; color: string; icon: string; skills: Skill[] 
     color: "#F59E0B",
     icon: "🛠️",
     skills: [
+      { name: "Node.js" },
       { name: "PHP" },
       { name: "Laravel" },
+      { name: "C#" },
+    ],
+  },
+  {
+    title: "Databases",
+    color: "#FB7185",
+    icon: "🛢",
+    skills: [
       { name: "MySQL" },
       { name: "SQL Server" },
     ],
@@ -46,7 +56,6 @@ const categories: { title: string; color: string; icon: string; skills: Skill[] 
     color: "#22C55E",
     icon: "☁️",
     skills: [
-      { name: "C#" },
       { name: "Git" },
       { name: "Azure" },
     ],
@@ -91,7 +100,7 @@ export default function Skills() {
         </motion.div>
 
         {/* Category grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {categories.map((cat, ci) => (
             <motion.div
               key={cat.title}
@@ -142,8 +151,8 @@ export default function Skills() {
           className="mt-14 glass border border-white/8 rounded-2xl p-6 flex flex-wrap justify-center gap-3"
         >
           {[
-            "HTML","CSS","JavaScript","TypeScript","React","Next.js","Tailwind","Bootstrap",
-            "Power Apps","Power Automate","SharePoint","Dataverse","PHP","Laravel",
+            "HTML","CSS","JavaScript","TypeScript","React.js","Next.js","Tailwind","Bootstrap",
+            "Power Apps","Power Automate","SharePoint","Dataverse","PHP","Laravel","Node.js",
             "MySQL","SQL Server","C#","Git","Azure","REST API",
           ].map((tech) => (
             <motion.span

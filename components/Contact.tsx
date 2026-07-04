@@ -7,8 +7,8 @@ const contactItems = [
   {
     icon: Mail,
     label: "Email",
-    value: "eshanasangeeth11@email.com",
-    href: "mailto:eshanasangeeth11@email.com",
+    value: "eshanasangeeth11@gmail.com",
+    href: "mailto:eshanasangeeth11@gmail.com",
     color: "#F59E0B",
   },
   {
@@ -30,7 +30,7 @@ const contactItems = [
 const socials = [
   { Icon: LinkedinIcon, href: "https://www.linkedin.com/in/eshana-sangeeth/", label: "LinkedIn", color: "#0A66C2" },
   { Icon: GithubIcon,   href: "https://github.com/EshSang",   label: "GitHub",   color: "#f1f5f9" },
-  { Icon: Mail,         href: "mailto:eshanasangeeth11@email.com", label: "Email", color: "#F59E0B" },
+  { Icon: Mail,         href: "mailto:eshanasangeeth11@gmail.com", label: "Email", color: "#F59E0B" },
 ];
 
 export default function Contact() {
