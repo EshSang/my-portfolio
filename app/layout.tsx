@@ -5,9 +5,12 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Eshana Sangeeth",
+  title: "Eshana Sangeeth",
   description:
     "Personal portfolio of Eshana Sangeeth – Power Platform Developer & Frontend Developer specialising in Microsoft Power Platform, React, and Next.js.",
+  icons: {
+    icon: "/title.ico",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
