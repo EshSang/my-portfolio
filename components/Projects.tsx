@@ -5,13 +5,12 @@ import { GithubIcon } from "./icons";
 
 const projects = [
   {
-    title: "CV Management & Onboarding System",
-    desc: "End-to-end recruitment and onboarding solution CV collection, and employee on-boarding using Power Apps and Power Automate.",
-    tech: ["Power Apps", "Power Automate", "SharePoint", "Dataverse"],
-    gradient: "from-[#F59E0B]/20 via-[#EF4444]/10 to-[#8B5CF6]/20",
-    accent: "#F59E0B",
-    icon: "👤",
-    // featured: true,
+    title: "Wage Worker Management System",
+    desc: "The Wage Worker Management System is a digital platform that connects customers with skilled workers through efficient job matching, secure payments, and a reliable feedback system.",
+    tech: ["React.js" , "Node.js" ,"Tailwind CSS", "MySQL", "REST API"],
+    gradient: "from-[#14B8A6]/20 to-[#14B8A6]/20",
+    accent: "#14B8A6",
+    icon: "👷🏼",
   },
   {
     title: "Supplier Portal System",
@@ -20,6 +19,15 @@ const projects = [
     gradient: "from-[#8B5CF6]/20 to-[#3B82F6]/20",
     accent: "#8B5CF6",
     icon: "🏭",
+  },
+  {
+    title: "CV Management & Onboarding System",
+    desc: "End-to-end recruitment and onboarding solution CV collection, and employee on-boarding using Power Apps and Power Automate.",
+    tech: ["Power Apps", "Power Automate", "SharePoint", "Dataverse"],
+    gradient: "from-[#F59E0B]/20 via-[#EF4444]/10 to-[#8B5CF6]/20",
+    accent: "#F59E0B",
+    icon: "🗎",
+    // featured: true,
   },
   {
     title: "Vehicle Parking Management",

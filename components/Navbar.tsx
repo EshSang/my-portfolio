@@ -37,9 +37,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <motion.a href="#home" whileHover={{ scale: 1.05 }} className="flex items-center gap-2.5">
-          <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#F59E0B] to-[#8B5CF6] flex items-center justify-center font-bold text-white text-sm shadow-lg glow-gold">
+          {/* <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-[#F59E0B] to-[#8B5CF6] flex items-center justify-center font-bold text-white text-sm shadow-lg glow-gold">
             ES
-          </div>
+          </div> */}
           <span className="font-bold text-white hidden sm:block">
             Eshana Sangeeth
           </span>
