@@ -6,7 +6,7 @@ import { GithubIcon } from "./icons";
 const projects = [
   {
     title: "CV Management & Onboarding System",
-    desc: "End-to-end recruitment and onboarding solution automating CV collection, screening workflows, and employee on-boarding using Power Apps and Power Automate.",
+    desc: "End-to-end recruitment and onboarding solution CV collection, and employee on-boarding using Power Apps and Power Automate.",
     tech: ["Power Apps", "Power Automate", "SharePoint", "Dataverse"],
     gradient: "from-[#F59E0B]/20 via-[#EF4444]/10 to-[#8B5CF6]/20",
     accent: "#F59E0B",
@@ -88,9 +88,8 @@ function ProjectCard({
       transition={{ duration: 0.6, delay }}
       whileHover={{ scale: 1.02, y: -4 }}
       className={`glass-strong border border-white/10 rounded-2xl p-6 flex flex-col gap-4 hover:border-white/20 transition-all duration-300 relative overflow-hidden group 
-        ${
-        featured ? "sm:col-span-2" : ""
-      }
+        
+        ${ featured ? "sm:col-span-1" : ""}
         `}
     
     >
