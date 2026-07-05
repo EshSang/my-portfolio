@@ -14,9 +14,9 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-6">
         {/* Logo + copyright */}
         <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#F59E0B] to-[#8B5CF6] flex items-center justify-center font-bold text-white text-xs">
+          {/* <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#F59E0B] to-[#8B5CF6] flex items-center justify-center font-bold text-white text-xs">
             ES
-          </div>
+          </div> */}
           <p className="text-slate-500 text-sm">
             <span className="text-white font-semibold">Eshana Sangeeth</span>
             {" "}© {new Date().getFullYear()}. All rights reserved.
