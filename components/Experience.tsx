@@ -22,9 +22,11 @@ const timeline = [
     period: "2023 – 2025",
     color:  "#3B82F6",
     achievements: [
-      "Led development of end-to-end Power Platform solutions for 10+ business departments",
-      "Integrated Dataverse models with SharePoint and external APIs for seamless data flow",
-      "Delivered the Supplier Portal and Vehicle Parking Management systems from scratch",
+      "Developed internal business tools using Power Apps canvas and model-driven applications",
+      "Built automated workflows with Power Automate",
+      "Integrate solutions with SharePoint, Dataverse, SQL, Dynamics 365, and APIs",
+      "Gather business requirements and convert them into technical solutions.",
+      "Provide support, enhancements, and maintenance for Power Platform solutions.",
       "Mentored junior developers on Power Platform best practices",
     ],
   },
@@ -35,8 +37,9 @@ const timeline = [
     color: "#8B5CF6",
     achievements: [
       "Developed internal business tools using Power Apps canvas and model-driven applications",
-      "Built automated workflows with Power Automate for HR and operations teams",
-      "Assisted senior developers in SharePoint customisation and integration projects",
+      "Built automated workflows with Power Automate",
+      "Integrate solutions with SharePoint, Dataverse, SQL, Dynamics 365, and APIs",
+      "Provide support, enhancements, and maintenance for Power Platform solutions."
     ],
   },
   {
@@ -45,9 +48,9 @@ const timeline = [
     period: "2019 – 2021",
     color:  "#22C55E",
     achievements: [
-      "Processed and quality-checked large volumes of product images for e-commerce platforms",
-      "Collaborated with design teams to ensure brand consistency across digital assets",
-      "Improved workflow efficiency by implementing batch-processing techniques",
+      "Accurately annotate and label image and video data according to predefined guidelines and project requirements.",
+      "Review and validate annotated data to ensure consistency, quality, and accuracy.",
+
     ],
   },
   

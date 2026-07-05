@@ -155,13 +155,13 @@ export default function Hero() {
             {/* Profile card */}
             <motion.div
               whileHover={{ scale: 1.02 }}
-              className="absolute glass-strong rounded-3xl overflow-hidden border border-white/10 shadow-2xl"
-              style={{ inset: "40px 30px" }}
+              className="absolute glass-strong rounded-full overflow-hidden border border-white/10 shadow-2xl"
+              style={{ inset: "40px -10px" }}
             >
               <img
                 src="/profile.jpg"
                 alt="Eshana Sangeeth"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full  object-cover object-top"
               />
             </motion.div>
 

@@ -4,8 +4,8 @@ import { Briefcase, GraduationCap, Calendar, Globe } from "lucide-react";
 
 const stats = [
   { icon: Calendar,     label: "Years of Experience", value: "4+",           color: "#F59E0B" },
-  { icon: Briefcase,    label: "Current Company",      value: "SRIQ Corp",    color: "#8B5CF6" },
-  { icon: GraduationCap,label: "Education",            value: "B.Sc. IT",     color: "#3B82F6" },
+  { icon: Briefcase,    label: "Current Company",      value: "SRIQ",    color: "#8B5CF6" },
+  { icon: GraduationCap,label: "Education",            value: "Bachelor of Information Technology",     color: "#3B82F6" },
   { icon: Globe,        label: "Freelance",            value: "Available",    color: "#22C55E" },
 ];
 
@@ -92,7 +92,7 @@ export default function About() {
                     <s.icon size={18} style={{ color: s.color }} />
                   </div>
                   <p className="text-[11px] text-slate-500 uppercase tracking-wider">{s.label}</p>
-                  <p className="text-white font-bold text-base">{s.value}</p>
+                  <p className="text-white font-bold text-base text-[14px]">{s.value}</p>
                 </motion.div>
               ))}
             </div>
@@ -109,9 +109,8 @@ export default function About() {
                 companies, I bridge the gap between low-code and full-code development.
               </p>
               <p className="text-slate-400 leading-relaxed text-sm sm:text-base">
-                My journey spans from image processing to application development, culminating in
-                my current role as a Low Code Engineer at SRIQ Corporation where I architect
-                end-to-end business solutions.
+                My journey spans from image processing(data entry) to application development, culminating in
+                my current role as a Low Code Engineer at SRIQ Corporation where I design and deliver end-to-end business solutions.
               </p>
 
               {/* Tags */}
