@@ -38,8 +38,7 @@ const categories: { title: string; color: string; icon: string; skills: Skill[] 
     skills: [
       { name: "Node.js" },
       { name: "PHP" },
-      { name: "Laravel" },
-      { name: "C#" },
+      { name: "C# (.NET)" },
     ],
   },
   {
@@ -153,7 +152,7 @@ export default function Skills() {
         >
           {[
             "HTML","CSS","JavaScript","TypeScript","React.js","Next.js","Tailwind","Bootstrap",
-            "Power Apps","Power Automate","SharePoint","Dataverse","PHP","Laravel","Node.js",
+            "Power Apps","Power Automate","SharePoint","Dataverse","PHP","Node.js",
             "MySQL","SQL Server","C#","Git","Azure","REST API","Postman",
           ].map((tech) => (
             <motion.span

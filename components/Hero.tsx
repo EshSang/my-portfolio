@@ -54,7 +54,7 @@ export default function Hero() {
             <br />
             <span className="gradient-text">Developer</span>
             <br />
-            <span className="text-white text-3xl sm:text-4xl">&amp; Frontend Developer</span>
+            <span className="text-white text-3xl sm:text-4xl">&amp; Web Developer</span>
           </motion.h1>
 
           {/* Description */}

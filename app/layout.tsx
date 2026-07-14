@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 export const metadata: Metadata = {
   title: "Eshana Sangeeth",
   description:
-    "Personal portfolio of Eshana Sangeeth – Power Platform Developer & Frontend Developer specialising in Microsoft Power Platform, React, and Next.js.",
+    "Personal portfolio of Eshana Sangeeth – Power Platform Developer & Web Developer specialising in Microsoft Power Platform, React, and Next.js.",
   icons: {
     icon: "/title.ico",
   },
