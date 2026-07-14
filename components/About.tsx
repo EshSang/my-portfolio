@@ -100,7 +100,7 @@ export default function About() {
             {/* Bio */}
             <div className="glass border border-white/8 rounded-2xl p-6 flex flex-col gap-4">
               <h3 className="text-white font-semibold text-lg">
-                Power Platform Developer &amp; Frontend Developer
+                Power Platform Developer &amp; Web Developer
               </h3>
               <p className="text-slate-400 leading-relaxed text-sm sm:text-base">
                 I specialise in creating scalable business applications and workflow automation
