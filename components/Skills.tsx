@@ -11,7 +11,7 @@ const categories: { title: string; color: string; icon: string; skills: Skill[] 
     color: "#3B82F6",
     icon: "💻",
     skills: [
-      { name: "HTML / CSS" },
+      { name: "HTML5 / CSS3" },
       { name: "JavaScript" },
       { name: "TypeScript" },
       { name: "React.js" },
@@ -151,7 +151,7 @@ export default function Skills() {
           className="mt-14 glass border border-white/8 rounded-2xl p-6 flex flex-wrap justify-center gap-3"
         >
           {[
-            "HTML","CSS","JavaScript","TypeScript","React.js","Next.js","Tailwind","Bootstrap",
+            "HTML5","CSS3","JavaScript","TypeScript","React.js","Next.js","Tailwind","Bootstrap",
             "Power Apps","Power Automate","SharePoint","Dataverse","PHP","Node.js",
             "MySQL","SQL Server","C#","Git","Azure","REST API","Postman",
           ].map((tech) => (
