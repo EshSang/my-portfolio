@@ -50,11 +50,11 @@ export default function Hero() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-4xl sm:text-5xl lg:text-[3.5rem] font-extrabold leading-[1.1] tracking-tight"
           >
-            <span className="text-white">Power Platform</span>
+            <span className="text-white"> Web </span>
+            {/* <br /> */}
+            <span className="gradient-text"> Developer</span>
             <br />
-            <span className="gradient-text">Developer</span>
-            <br />
-            <span className="text-white text-3xl sm:text-4xl">&amp; Web Developer</span>
+            <span className="text-white text-3xl sm:text-4xl"> & Power Platform Developer</span>
           </motion.h1>
 
           {/* Description */}
