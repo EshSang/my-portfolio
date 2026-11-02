@@ -27,6 +27,7 @@ const categories: { title: string; color: string; icon: string; skills: Skill[] 
     skills: [
       { name: "Power Apps" },
       { name: "Power Automate" },
+      { name: "Desktop Flow" },
       { name: "SharePoint" },
       { name: "Dataverse" },
     ],
@@ -55,7 +56,7 @@ const categories: { title: string; color: string; icon: string; skills: Skill[] 
     color: "#22C55E",
     icon: "☁️",
     skills: [
-      { name: "Git" },
+      { name: "Git Hub" },
       { name: "Azure" },
       { name: "Postman" },
     ],

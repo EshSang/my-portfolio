@@ -5,9 +5,25 @@ import { MapPin, Zap } from "lucide-react";
 const timeline = [
 
   {
+    company: "Q-Bitly Pty Ltd",
+    role: "Associate Software Engineer",
+    period: "2026 October – Present",
+    color: "#0bd7f5",
+    achievements: [
+      "Architecting enterprise-grade low-code solutions using Microsoft Power Platform",
+      "Building custom connectors and PCF controls to extend platform capabilities",
+      "Developing RPA solutions using Power Automate Desktop to automate repetitive business processes",
+      "Designing and managing SQL Server databases, queries,views and stored procedures",
+      "Integrating REST APIs and third-party services to connect business systems and streamline workflows",
+      "Collaborating with cross-functional teams on digital transformation initiatives"
+      //"Developing full-stack features with React and Next.js for internal tooling",
+    ],
+  },
+
+  {
     company: "SRIQ Corporation",
     role: "Associate Low Code Engineer",
-    period: "2025 – Present",
+    period: "2025 August – 2026 September",
     color: "#F59E0B",
     achievements: [
       "Architecting enterprise-grade low-code solutions using Microsoft Power Platform",
@@ -19,7 +35,7 @@ const timeline = [
   {
     company: "OREL IT",
     role: "Associate Application Developer",
-    period: "2023 – 2025",
+    period: "2023 August – 2025 August",
     color:  "#3B82F6",
     achievements: [
       "Developed internal business tools using Power Apps canvas and model-driven applications",
@@ -33,7 +49,7 @@ const timeline = [
   {
     company: "OREL IT",
     role: "Trainee Application Developer",
-    period: "2022 – 2023",
+    period: "2022 January – 2023 August",
     color: "#8B5CF6",
     achievements: [
       "Developed internal business tools using Power Apps canvas and model-driven applications",
@@ -45,7 +61,7 @@ const timeline = [
   {
     company: "OREL IT",
     role: "Associate Image Processor",
-    period: "2019 – 2021",
+    period: "2019 October – 2022 January",
     color:  "#22C55E",
     achievements: [
       "Accurately annotate and label image and video data according to predefined guidelines and project requirements.",
@@ -83,7 +99,32 @@ export default function Experience() {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-5 sm:left-1/2 sm:-translate-x-px top-0 bottom-0 w-px bg-gradient-to-b from-[#F59E0B]/60 via-[#8B5CF6]/60 to-[#22C55E]/60" />
+          {/* <div
+            className="absolute left-5 sm:left-1/2 sm:-translate-x-px top-0 bottom-0 w-px"
+            style={{
+              background: `linear-gradient(to bottom, ${timeline
+                .map(
+                  ({ color }, index) =>
+                    `${color}99 ${(index / (timeline.length - 1)) * 100}%`,
+                )
+                .join(", ")})`,
+            }}
+          /> */}
+
+          
+            <div
+              className="absolute left-5 sm:left-1/2 sm:-translate-x-px top-0 bottom-0 w-[2px]"
+              style={{
+                background: `linear-gradient(
+                  to bottom,
+                  ${timeline.map(({ color }, index) => {
+                    const percentage = (index / (timeline.length - 1)) * 100;
+                    return `${color} ${percentage}%`;
+                  }).join(", ")}
+                )`,
+              }}
+            />
+
 
           <div className="flex flex-col gap-12">
             {timeline.map((item, i) => (

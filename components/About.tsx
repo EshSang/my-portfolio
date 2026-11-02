@@ -4,7 +4,7 @@ import { Briefcase, GraduationCap, Calendar, Globe } from "lucide-react";
 
 const stats = [
   { icon: Calendar,     label: "Years of Experience", value: "4+",           color: "#F59E0B" },
-  { icon: Briefcase,    label: "Current Company",      value: "SRIQ",    color: "#8B5CF6" },
+  { icon: Briefcase,    label: "Current Company",      value: "Q Bitly Pty Ltd",    color: "#8B5CF6" },
   { icon: GraduationCap,label: "Education",            value: "Bachelor of Information Technology",     color: "#3B82F6" },
   { icon: Globe,        label: "Freelance",            value: "Available",    color: "#22C55E" },
 ];
@@ -110,12 +110,12 @@ export default function About() {
               </p>
               <p className="text-slate-400 leading-relaxed text-sm sm:text-base">
                 My journey spans from image processing(data entry) to application development, culminating in
-                my current role as a Low Code Engineer at SRIQ Corporation where I design and deliver end-to-end business solutions.
+                my current role as Associate Software Engineer at Q Bitly Pty Ltd where I design and deliver end-to-end business solutions.
               </p>
 
               {/* Tags */}
               <div className="flex flex-wrap gap-2 pt-2">
-                {["Power Platform", "React", "Next.js", "SharePoint", "Azure", "Laravel"].map((t) => (
+                {["Power Platform", "RPA", "React", "Next.js", "Azure", "Laravel"].map((t) => (
                   <span
                     key={t}
                     className="px-3 py-1 rounded-full text-xs font-medium"
